@@ -25,6 +25,8 @@ export const Login = () => {
 
   return (
     <>
+    <div className="flex flex-col items-center justify-center h-screen">
+
       <form onSubmit={handleSubmit}>
         <Input
           label="Username"
@@ -44,6 +46,7 @@ export const Login = () => {
 
         <Button type="submit">Login</Button>
       </form>
+    </div>
     </>
   );
 };

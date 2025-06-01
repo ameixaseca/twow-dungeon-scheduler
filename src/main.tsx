@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.tsx";
 import { BrowserRouter, Route, Routes } from "react-router";
 import { MainLayout } from "./layout/MainLayout.tsx";
-import { Login } from "./Pages/Login.tsx";
+import { Login, Characters } from "./Pages";
 import { AppProvider } from "./infra/app.context.tsx";
 
 createRoot(document.getElementById("root")!).render(
@@ -17,6 +17,7 @@ createRoot(document.getElementById("root")!).render(
           </Route>
           <Route element={<MainLayout />}>
             <Route path="/" element={<App />}></Route>
+            <Route path="/characters" element={<Characters />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>

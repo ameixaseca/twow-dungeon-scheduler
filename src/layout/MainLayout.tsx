@@ -7,7 +7,8 @@ export const MainLayout = () => {
   return (
     <>
       <nav className="flex space-x-4 p-4 bg-gray-800 text-white">
-        <div className="font-extrabold">Turtle Wow Dungeon Scheduler</div>
+        <div className="font-extrabold">
+          <NavbarLink to="/">Turtle Wow Dungeon Scheduler</NavbarLink></div>
         <div className="flex space-x-4">
           <NavbarLink to="/characters">Characters</NavbarLink>
           <NavbarLink to="/dungeons">Dungeons</NavbarLink>
@@ -44,7 +45,9 @@ export const MainLayout = () => {
         </div>
       ))}
 
-      <Outlet />
+      <div className="container mx-auto p-4">
+       <Outlet />
+      </div>
     </>
   );
 };
